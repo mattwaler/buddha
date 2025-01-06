@@ -1,0 +1,41 @@
+### Get Messages
+
+GET http://localhost:3000/messages
+content-type: application/json
+
+### Create Message
+
+POST http://localhost:3000/messages
+content-type: application/json
+
+{
+  "message": "Creating a new message!"
+}
+
+### Sign JWT
+
+POST http://localhost:3000/tokens/sign
+content-type: application/json
+
+{
+  "username": "Matt Waler"
+}
+
+### Verify JWT
+
+POST http://localhost:3000/tokens/verify
+content-type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hdHQgV2FsZXIiLCJyb2xlIjoidXNlciIsImV4cCI6MTcyMjYzMjEzMn0.JKkvL9vxlwLVaSQiRcSMuEfrtM6ilQ44lbLFAsFu3zs"
+}
+
+### Verify JWT
+
+POST http://localhost:3000/users/login
+content-type: application/json
+
+{
+  "email": "contact@mattwaler.com",
+  "password": "testing123"
+}
