@@ -1,4 +1,4 @@
-# 🛩️ Buddha
+# 🧘🏻 Buddha
 
 A TS server starter with Bun, Drizzle, and Hono.
 
